@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+
+<body>
+
+   
+
+
+    <div class="container">
+        <div class="Quizs">
+            <P>Programming Languages</P>
+
+            <!-- html -->
+
+            <div class="html-Quiz-container" id="html-Quiz-container">
+                <pre>HTML</pre>
+                <button id="arrow-down1"> <i class="fa-solid fa-angle-right"></i></button>
+            </div>
+
+            <div class="html-Quiz-content" id="html-Quiz-content">
+                <div class="html-beginner-Quiz-container" id="html-beginner-Quiz-container">
+                    <pre>Beginner</pre>
+                    <button id="arrow-down1-1"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+                <div class="html-beginner-Quiz-levels" id="html-beginner-Quiz-levels">
+                    <div class="html-beginner-Quiz-level-1" onclick="startQuiz('html-beginner-level1')">
+                        <pre>Level 1</pre>
+                    </div>
+                    <div class="html-beginner-Quiz-level-2" onclick="startQuiz('html-beginner-level2')">
+                        <pre>Level 2</pre>
+                    </div>
+                    <div class="html-beginner-Quiz-level-3" onclick="startQuiz('html-beginner-level3')">
+                        <pre>Level 3</pre>
+                    </div>
+                    <div class="html-beginner-Quiz-assignment-level"onclick="startQuiz('html-beginner-assignment')">
+                        <pre>Assignment</pre>
+                    </div>
+                </div>
+
+
+                <div class="html-intermediate-Quiz-container" id="html-intermediate-Quiz-container">
+                    <pre>Intermediate</pre>
+                    <button id="arrow-down1-2"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+                <div class="html-intermediate-Quiz-levels" id="html-intermediate-Quiz-levels">
+                    <div class="html-intermediate-Quiz-level-1" onclick="startQuiz('html-intermediate-level1')">
+                        <pre>Level 1</pre>
+                    </div>
+                    <div class="html-intermediate-Quiz-level-2" onclick="startQuiz('html-intermediate-level2')">
+                        <pre>Level 2</pre>
+                    </div>
+                    <div class="html-intermediate-Quiz-level-3" onclick="startQuiz('html-intermediate-level3')">
+                        <pre>Level 3</pre>
+                    </div>
+                    <div class="html-intermediate-Quiz-assignment-level" onclick="startQuiz('html-intermidiate-assignment')">
+                        <pre>Assignment</pre>
+                    </div>
+                </div>
+
+                <div class="html-advanced-Quiz-container" id="html-advanced-Quiz-container">
+                    <pre>Advanced</pre>
+                    <button id="arrow-down1-3"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+                <div class="html-advanced-Quiz-levels" id="html-advanced-Quiz-levels">
+                    <div class="html-advanced-Quiz-level-1" onclick="startQuiz('html-advanced-level1')">
+                        <pre>Level 1</pre>
+                    </div>
+                    <div class="html-advanced-Quiz-level-2" onclick="startQuiz('html-advanced-level2')">
+                        <pre>Level 2</pre>
+                    </div>
+                    <div class="html-advanced-Quiz-level-3" onclick="startQuiz('html-advanced-level3')">
+                        <pre>Level 3</pre>
+                    </div>
+                    <div class="html-advanced-Quiz-assignment-level" onclick="startQuiz('html-advanced-assignment')">
+                        <pre>Assignment</pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- js -->
+
+            <div class="js-Quiz-container" id="js-Quiz-container">
+                <pre>JavaScript</pre>
+                <button id="arrow-down2"> <i class="fa-solid fa-angle-right"></i></button>
+            </div>
+
+
+            <div class="js-Quiz-content" id="js-Quiz-content">
+                <div class="js-beginner-Quiz-container" id="js-beginner-Quiz-container">
+                    <pre>Beginner</pre>
+                    <button id="arrow-down2-1"> <i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+                <div class="js-beginner-Quiz-levels" id="js-beginner-Quiz-levels">
+
+                    <div class="js-beginner-Quiz-level-1" onclick="startQuiz('js-beginner-level1')" >
+                        <pre>Level 1</pre>
+                    </div>
+                    <div class="js-beginner-Quiz-level-2" onclick="startQuiz('js-beginner-level2')">
+                        <pre>Level 2</pre>
+                    </div>
+                    <div class="js-beginner-Quiz-level-3" onclick="startQuiz('js-beginner-level3')">
+                        <pre>Level 3</pre>
+                    </div>
+                    <div class="js-beginner-Quiz-assignment-level" onclick="startQuiz('js-assignment-level')">
+                        <pre>Assignment</pre>
+                    </div>
+                </div>
+
+
+                <div class="js-intermediate-Quiz-container" id="js-intermediate-Quiz-container">
+                    <pre>Intermediate</pre>
+                    <button id="arrow-down2-2"> <i class="fa-solid fa-angle-right"></i></button>
+
+                </div>
+
+                <div class="js-intermediate-Quiz-levels" id="js-intermediate-Quiz-levels">
+                    <div class="js-intermediate-Quiz-level-1" onclick="startQuiz('js-intermediate-level1')">
+                        <pre>Level 1</pre>
+                    </div>
+                    <div class="js-intermediate-Quiz-level-2" onclick="startQuiz('js-intermediate-level2')">
+                        <pre>Level 2</pre>
+                    </div>
+                    <div class="js-intermediate-Quiz-level-3" onclick="startQuiz('js-intermediate-level3')">
+                        <pre>Level 3</pre>
+                    </div>
+                    <div class="js-intermediate-Quiz-assignment-level" onclick="startQuiz('js-intermidiate-assignment')">
+                        <pre>Assignment</pre>
+                    </div>
+                </div>
+
+                <div class="js-advanced-Quiz-container" id="js-advanced-Quiz-container">
+                    <pre>Advanced</pre>
+                    <button id="arrow-down2-3"> <i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+
+                <div class="js-advanced-Quiz-levels" id="js-advanced-Quiz-levels">
+                    <div class="js-advanced-Quiz-level-1" onclick="startQuiz('js-advanced-level1')">
+                        <pre>Level 1</pre>
+                    </div>
+                    <div class="js-advanced-Quiz-level-2" onclick="startQuiz('js-advanced-level2')">
+                        <pre>Level 2</pre>
+                    </div>
+                    <div class="js-advanced-Quiz-level-3" onclick="startQuiz('js-advanced-level3')">
+                        <pre>Level 3</pre>
+                    </div>
+                    <div class="js-advanced-Quiz-assignment-level" onclick="startQuiz('js-advanced-assignment')">
+                        <pre>Assignment</pre>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- python -->
+
+            <div class="python-Quiz-container" id="python-Quiz-container">
+                <pre>Python</pre>
+                <button id="arrow-down3"> <i class="fa-solid fa-angle-right"></i></button>
+            </div>
+
+            <div class="python-Quiz-content" id="python-Quiz-content">
+                <div class="python-beginner-Quiz-container" id="python-beginner-Quiz-container">
+                    <pre>Beginner</pre>
+                    <button id="arrow-down3-1"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+                <div class="python-beginner-Quiz-levels" id="python-beginner-Quiz-levels">
+                    <div class="python-beginner-Quiz-level-1" onclick="startQuiz('python-beginner-level1')">
+                        <pre>Level 1</pre>
+                    </div>
+                    <div class="python-beginner-Quiz-level-2" onclick="startQuiz('python-beginner-level2')">
+                        <pre>Level 2</pre>
+                    </div>
+                    <div class="python-beginner-Quiz-level-3" onclick="startQuiz('python-beginner-level3')">
+                        <pre>Level 3</pre>
+                    </div>
+                    <div class="python-beginner-Quiz-assignment-level" onclick="startQuiz('python-assignment-level')">
+                        <pre>Assignment</pre>
+                    </div>
+                </div>
+
+                <div class="python-intermediate-Quiz-container" id="python-intermediate-Quiz-container">
+                    <pre>Intermediate</pre>
+                    <button id="arrow-down3-2"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+                <div class="python-intermediate-Quiz-levels" id="python-intermediate-Quiz-levels">
+                    <div class="python-intermediate-Quiz-level-1" onclick="startQuiz('python-intermediate-level1')">
+                        <pre>Level 1</pre>
+                    </div>
+                    <div class="python-intermediate-Quiz-level-2" onclick="startQuiz('python-intermediate-level2')">
+                        <pre>Level 2</pre>
+                    </div>
+                    <div class="python-intermediate-Quiz-level-3" onclick="startQuiz('python-intermediate-level3')">
+                        <pre>Level 3</pre>
+                    </div>
+                    <div class="python-intermediate-Quiz-assignment-level" onclick="startQuiz('python-intermidiate-assignment')">
+                        <pre>Assignment</pre>
+                    </div>
+                </div>
+
+                <div class="python-advanced-Quiz-container" id="python-advanced-Quiz-container">
+                    <pre>Advanced</pre>
+                    <button id="arrow-down3-3"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+                <div class="python-advanced-Quiz-levels" id="python-advanced-Quiz-levels">
+                    <div class="python-advanced-Quiz-level-1" onclick="startQuiz('python-advanced-level1')">
+                        <pre>Level 1</pre>
+                    </div>
+                    <div class="python-advanced-Quiz-level-2" onclick="startQuiz('python-advanced-level2')">
+                        <pre>Level 2</pre>
+                    </div>
+                    <div class="python-advanced-Quiz-level-3" onclick="startQuiz('python-advanced-level3')">
+                        <pre>Level 3</pre>
+                    </div>
+                    <div class="python-advanced-Quiz-assignment-level" onclick="startQuiz('python-advanced-assignment')">
+                        <pre>Assignment</pre>
+                    </div>
+                </div>
+            </div>
+
+          <!-- java -->
+
+            <div class="java-Quiz-container" id="java-Quiz-container">
+                <pre>Java</pre>
+                <button id="arrow-down4"> <i class="fa-solid fa-angle-right"></i></button>
+            </div>
+
+            <div class="java-Quiz-content" id="java-Quiz-content">
+                <div class="java-beginner-Quiz-container" id="java-beginner-Quiz-container">
+                    <pre>Beginner</pre>
+                    <button id="arrow-down4-1"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+                <div class="java-beginner-Quiz-levels" id="java-beginner-Quiz-levels">
+                    <div class="java-beginner-Quiz-level-1" onclick="startQuiz('java-beginner-level1')">
+                        <pre>Level 1</pre>
+                    </div>
+                    <div class="java-beginner-Quiz-level-2" onclick="startQuiz('java-beginner-level2')">
+                        <pre>Level 2</pre>
+                    </div>
+                    <div class="java-beginner-Quiz-level-3" onclick="startQuiz('java-beginner-level3')">
+                        <pre>Level 3</pre>
+                    </div>
+                    <div class="java-beginner-Quiz-assignment-level" onclick="startQuiz('java-assignment-level')">
+                        <pre>Assignment</pre>
+                    </div>
+                </div>
+
+                <div class="java-intermediate-Quiz-container" id="java-intermediate-Quiz-container">
+                    <pre>Intermediate</pre>
+                    <button id="arrow-down4-2"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+                <div class="java-intermediate-Quiz-levels" id="java-intermediate-Quiz-levels">
+                    <div class="java-intermediate-Quiz-level-1" onclick="startQuiz('java-intermediate-level1')">
+                        <pre>Level 1</pre>
+                    </div>
+                    <div class="java-intermediate-Quiz-level-2"     onclick="startQuiz('java-intermediate-level2')">
+                        <pre>Level 2</pre>
+                    </div>
+                    <div class="java-intermediate-Quiz-level-3" onclick="startQuiz('java-intermediate-level3')">
+                        <pre>Level 3</pre>
+                    </div>
+                    <div class="java-intermediate-Quiz-assignment-level" onclick="startQuiz('java-intermidiate-assignment')">
+                        <pre>Assignment</pre>
+                    </div>
+                </div>
+
+                <div class="java-advanced-Quiz-container" id="java-advanced-Quiz-container">
+                    <pre>Advanced</pre>
+                    <button id="arrow-down4-3"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+                <div class="java-advanced-Quiz-levels" id="java-advanced-Quiz-levels">
+                    <div class="java-advanced-Quiz-level-1" onclick="startQuiz('java-advanced-level1')">
+                        <pre>Level 1</pre>
+                    </div>
+                    <div class="java-advanced-Quiz-level-2" onclick="startQuiz('java-advanced-level2')">
+                        <pre>Level 2</pre>
+                    </div>
+                    <div class="java-advanced-Quiz-level-3" onclick="startQuiz('java-advanced-level3')">
+                        <pre>Level 3</pre>
+                    </div>
+                    <div class="java-advanced-Quiz-assignment-level" onclick="startQuiz('java-advanced-assignment')">
+                        <pre>Assignment</pre>
+                    </div>
+                </div>
+            </div>
+
+           <!-- CSharp -->
+
+            <div class="CSharp-Quiz-container" id="CSharp-Quiz-container">
+                <pre>CSharp</pre>
+                <button id="arrow-down5"> <i class="fa-solid fa-angle-right"></i></button>
+
+
+            </div>
+
+
+            <div class="CSharp-Quiz-content" id="CSharp-Quiz-content">
+                <div class="CSharp-beginner-Quiz-container" id="CSharp-beginner-Quiz-container">
+                    <pre>Beginner</pre>
+                    <button id="arrow-down5-1"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+                <div class="CSharp-beginner-Quiz-levels" id="CSharp-beginner-Quiz-levels">
+                    <div class="CSharp-beginner-Quiz-level-1" onclick="startQuiz('csharp-beginner-level1')">
+                        <pre>Level 1</pre>
+                    </div>
+                    <div class="CSharp-beginner-Quiz-level-2" onclick="startQuiz('csharp-beginner-level2')">
+                        <pre>Level 2</pre>
+                    </div>
+                    <div class="CSharp-beginner-Quiz-level-3" onclick="startQuiz('csharp-beginner-level3')">
+                        <pre>Level 3</pre>
+                    </div>
+                    <div class="CSharp-beginner-Quiz-assignment-level" onclick="startQuiz('csharp-assignment-level')">
+                        <pre>Assignment</pre>
+                    </div>
+                </div>
+
+                <div class="CSharp-intermediate-Quiz-container" id="CSharp-intermediate-Quiz-container">
+                    <pre>Intermediate</pre>
+                    <button id="arrow-down5-2"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+                <div class="CSharp-intermediate-Quiz-levels" id="CSharp-intermediate-Quiz-levels">
+                    <div class="CSharp-intermediate-Quiz-level-1" onclick="startQuiz('csharp-intermediate-level1')">
+                        <pre>Level 1</pre>
+                    </div>
+                    <div class="CSharp-intermediate-Quiz-level-2" onclick="startQuiz('csharp-intermediate-level2')">
+                        <pre>Level 2</pre>
+                    </div>
+                    <div class="CSharp-intermediate-Quiz-level-3" onclick="startQuiz('csharp-intermediate-level3')">
+                        <pre>Level 3</pre>
+                    </div>
+                    <div class="CSharp-intermediate-Quiz-assignment-level" onclick="startQuiz('csharp-intermidiate-assignment')">
+                        <pre>Assignment</pre>
+                    </div>
+                </div>
+
+                <div class="CSharp-advanced-Quiz-container" id="CSharp-advanced-Quiz-container">
+                    <pre>Advanced</pre>
+                    <button id="arrow-down5-3"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+                <div class="CSharp-advanced-Quiz-levels" id="CSharp-advanced-Quiz-levels">
+                    <div class="CSharp-advanced-Quiz-level-1" onclick="startQuiz('csharp-advanced-level1')">
+                        <pre>Level 1</pre>
+                    </div>
+                    <div class="CSharp-advanced-Quiz-level-2" onclick="startQuiz('csharp-advanced-level2')">
+                        <pre>Level 2</pre>
+                    </div>
+                    <div class="CSharp-advanced-Quiz-level-3" onclick="startQuiz('csharp-advanced-level3')">
+                        <pre>Level 3</pre>
+                    </div>
+                    <div class="CSharp-advanced-Quiz-assignment-level" onclick="startQuiz('csharp-advanced-assignment')">
+                        <pre>Assignment</pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- <div class="C-plus-Quiz-container" id="C-plus-Quiz-container">
+                <pre>C++</pre>
+                <button id="arrow-down6"> <i class="fa-solid fa-angle-right"></i></button>
+            </div>
+
+            <div class="C-plus-Quiz-content" id="C-plus-Quiz-content">
+                <div class="C-plus-beginner-Quiz-container" id="C-plus-beginner-Quiz-container">
+                    <pre>Beginner</pre>
+                    <button id="arrow-down6-1"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+                <div class="C-plus-beginner-Quiz-levels" id="C-plus-beginner-Quiz-levels">
+                    <div class="C-plus-beginner-Quiz-level-1">
+                        <pre>Level 1</pre>
+                    </div>
+                    <div class="C-plus-beginner-Quiz-level-2">
+                        <pre>Level 2</pre>
+                    </div>
+                    <div class="C-plus-beginner-Quiz-level-3">
+                        <pre>Level 3</pre>
+                    </div>
+                    <div class="C-plus-beginner-Quiz-assignment-level">
+                        <pre>Assignment</pre>
+                    </div>
+                </div>
+
+                <div class="C-plus-intermediate-Quiz-container" id="C-plus-intermediate-Quiz-container">
+                    <pre>Intermediate</pre>
+                    <button id="arrow-down6-2"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+                <div class="C-plus-intermediate-Quiz-levels" id="C-plus-intermediate-Quiz-levels">
+                    <div class="C-plus-intermediate-Quiz-level-1">
+                        <pre>Level 1</pre>
+                    </div>
+                    <div class="C-plus-intermediate-Quiz-level-2">
+                        <pre>Level 2</pre>
+                    </div>
+                    <div class="C-plus-intermediate-Quiz-level-3">
+                        <pre>Level 3</pre>
+                    </div>
+                    <div class="C-plus-intermediate-Quiz-assignment-level">
+                        <pre>Assignment</pre>
+                    </div>
+                </div>
+
+                <div class="C-plus-advanced-Quiz-container" id="C-plus-advanced-Quiz-container">
+                    <pre>Advanced</pre>
+                    <button id="arrow-down6-3"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+                <div class="C-plus-advanced-Quiz-levels" id="C-plus-advanced-Quiz-levels">
+                    <div class="C-plus-advanced-Quiz-level-1">
+                        <pre>Level 1</pre>
+                    </div>
+                    <div class="C-plus-advanced-Quiz-level-2">
+                        <pre>Level 2</pre>
+                    </div>
+                    <div class="C-plus-advanced-Quiz-level-3">
+                        <pre>Level 3</pre>
+                    </div>
+                    <div class="C-plus-advanced-Quiz-assignment-level">
+                        <pre>Assignment</pre>
+                    </div>
+                </div>
+            </div> -->
+
+           <!-- C -->
+
+            <div class="C-Quiz-container" id="C-Quiz-container">
+                <pre>C</pre>
+                <button id="arrow-down7"> <i class="fa-solid fa-angle-right"></i></button>
+            </div>
+
+
+            <div class="C-Quiz-content" id="C-Quiz-content">
+                <div class="C-beginner-Quiz-container" id="C-beginner-Quiz-container">
+                    <pre>Beginner</pre>
+                    <button id="arrow-down7-1"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+                <div class="C-beginner-Quiz-levels" id="C-beginner-Quiz-levels">
+                    <div class="C-beginner-Quiz-level-1" onclick="startQuiz('c-beginner-level1')">
+                        <pre>Level 1</pre>
+                    </div>
+                    <div class="C-beginner-Quiz-level-2" onclick="startQuiz('c-beginner-level2')">
+                        <pre>Level 2</pre>
+                    </div>
+                    <div class="C-beginner-Quiz-level-3" onclick="startQuiz('c-beginner-level3')">
+                        <pre>Level 3</pre>
+                    </div>
+                    <div class="C-beginner-Quiz-assignment-level" onclick="startQuiz('c-assignment-level')">
+                        <pre>Assignment</pre>
+                    </div>
+                </div>
+
+                <div class="C-intermediate-Quiz-container" id="C-intermediate-Quiz-container">
+                    <pre>Intermediate</pre>
+                    <button id="arrow-down7-2"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+                <div class="C-intermediate-Quiz-levels" id="C-intermediate-Quiz-levels">
+                    <div class="C-intermediate-Quiz-level-1" onclick="startQuiz('c-intermediate-level1')">
+                        <pre>Level 1</pre>
+                    </div>
+                    <div class="C-intermediate-Quiz-level-2" onclick="startQuiz('c-intermediate-level2')">
+                        <pre>Level 2</pre>
+                    </div>
+                    <div class="C-intermediate-Quiz-level-3" onclick="startQuiz('c-intermediate-level3')">
+                        <pre>Level 3</pre>
+                    </div>
+                    <div class="C-intermediate-Quiz-assignment-level" onclick="startQuiz('c-intermidiate-assignment')">
+                        <pre>Assignment</pre>
+                    </div>
+                </div>
+
+                <div class="C-advanced-Quiz-container" id="C-advanced-Quiz-container">
+                    <pre>Advanced</pre>
+                    <button id="arrow-down7-3"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+                <div class="C-advanced-Quiz-levels" id="C-advanced-Quiz-levels">
+                    <div class="C-advanced-Quiz-level-1" onclick="startQuiz('c-advanced-level1')">
+                        <pre>Level 1</pre>
+                    </div>
+                    <div class="C-advanced-Quiz-level-2" onclick="startQuiz('c-advanced-level2')">
+                        <pre>Level 2</pre>
+                    </div>
+                    <div class="C-advanced-Quiz-level-3" onclick="startQuiz('c-advanced-level3')">
+                        <pre>Level 3</pre>
+                    </div>
+                    <div class="C-advanced-Quiz-assignment-level" onclick="startQuiz('c-advanced-assignment')">
+                        <pre>Assignment</pre>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="Quiz-container">
+            <div class="programming-Quiz-heading">
+                <p>Programming Quiz Challenge</p>
+            </div>
+            <div class="programming-challenge-discription">
+                <p>Test your knowledge across multiple languages and difficulty levels. Complete levels to unlock more
+                    challenges and track your progress!</p>
+            </div>
+            <div class="programming-Quiz-main-discription">
+                <div class="earn-badges">
+                    <i class="ri-trophy-line"></i>
+                    <h4>Earn Badges</h4>
+                    <p>Complete challenges to unlock achievements</p>
+                </div>
+                <div class="timed-Quiz">
+                    <i class="ri-timer-line"></i>
+                    <h4>Timed Quizzes</h4>
+                    <p>Test your speed and knowledge</p>
+                </div>
+                <div class="detailed-explanation">
+                    <i class="ri-file-text-line"></i>
+                    <h4>Detailed Explanations</h4>
+                    <p>Learn from answers</p>
+                </div>
+            </div>
+            <div class="programming-challenge-button">
+                <button id="start-quiz-btn">Select a Quiz to Begin</button></button>
+            </div>
+            <div class="programming-challenge-footer">
+                <p>Already completed some levels? Check your progress in the sidebar!</p>
+            </div>
+        </div>
+        <div id="quiz-container" style="display: none;">
+            <div class="question-box">
+                <h4 id="remove">❌</h4>
+                <div id="question-number">Question: 1/3</div>
+                <div id="question-text">Question text here</div>
+
+                <div class="options" id="options-container"></div>
+                <button id="next-btn" onclick="previousQuestion()">Pre Question</button>
+                <button onclick="nextQuestion()" id="next-btn">Next Question</button>
+            </div>
+        </div>
+         
+        </div>
+    </div>
+    <footer class="quiz-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="./images/logo.png" alt="QuizPlatform Logo">
+                <p>QuizPlatform – Learn, Play, and Improve your skills with interactive quizzes!</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-house" style="margin-right:8px;"></i>Home</a></li>
+                    <li><a href="#"><i class="fa-solid fa-list-ul" style="margin-right:8px;"></i> Quizzes</a></li>
+                    <li><a href="#"><i class="fa-solid fa-gauge" style="margin-right:8px;"></i>Dashboard</a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-info" style="margin-right:8px;"></i>About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-envelope" style="margin-right:8px;"></i>Email: support@quizplatform.com</p>
+                <p id="phone-number"><i class="fa-solid fa-phone" style="margin-right:8px;"></i>Phone: +91 98765 43210
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="ri-facebook-circle-line"></i></a>
+                    <a href="#"><i class="ri-whatsapp-line"></i></a>
+                    <a href="#"><i class="ri-twitter-x-line"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 QuizPlatform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
