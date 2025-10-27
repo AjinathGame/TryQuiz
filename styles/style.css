@@ -3388,3 +3388,17 @@
       border-radius: 8px;
       cursor: pointer;
     }
+
+
+.corr-ans{
+    height: 94%;
+    overflow-y: scroll;
+    width: 70%;
+    position: absolute;
+    top: 2%;
+    z-index: 10;
+    padding-bottom: 40px;
+    left: 25%;
+    background-color: whitesmoke;
+    display: none;
+}

@@ -359,16 +359,16 @@ javaAdvancedQuiz.addEventListener("dblclick", function () {
 
 let csharpQuizContainer = document.getElementById("CSharp-Quiz-container");
 let csharpQuiz = document.getElementById("CSharp-Quiz-content");
-let arrow6 = document.getElementById("arrow-down6");
+let arrow5 = document.getElementById("arrow-down5");
 
 csharpQuizContainer.addEventListener("click", function () {
   document.getElementById("CSharp-Quiz-content").style.display = "block";
-  arrow6.style.transform = "rotate(90deg)";
+  arrow5.style.transform = "rotate(90deg)";
 });
 
 csharpQuizContainer.addEventListener("dblclick", function () {
   document.getElementById("CSharp-Quiz-content").style.display = "none";
-  arrow6.style.transform = "rotate(0deg)";
+  arrow5.style.transform = "rotate(0deg)";
 });
 
 // csharpbeg
@@ -3303,62 +3303,62 @@ function startQuiz(levelId) {
   if (levelId === 'c-advanced-level2') currentQuestions = cAdvancedLevel2;
   if (levelId === 'c-advanced-level3') currentQuestions = cAdvancedLevel3;
   if (levelId === 'c-advanced-assignment') currentQuestions = cAdvancedAssignment;
- 
+
 }
 
 //html
 
 // html beginner level buttons
 
-document.querySelector(".html-beginner-Quiz-level-1").addEventListener("click", function() {
+document.querySelector(".html-beginner-Quiz-level-1").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "HTML : Beginner Level 1";
 });
 
-document.querySelector(".html-beginner-Quiz-level-2").addEventListener("click", function() {
+document.querySelector(".html-beginner-Quiz-level-2").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "HTML : Beginner Level 2";
 });
 
-document.querySelector(".html-beginner-Quiz-level-3").addEventListener("click", function() {
+document.querySelector(".html-beginner-Quiz-level-3").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "HTML : Beginner Level 3";
 });
 
-document.querySelector(".html-beginner-Quiz-assignment-level").addEventListener("click", function() {
+document.querySelector(".html-beginner-Quiz-assignment-level").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "HTML : Beginner Assignment";
 });
 
 // html intermidiate level buttons
 
-document.querySelector(".html-intermediate-Quiz-level-1").addEventListener("click", function() {
+document.querySelector(".html-intermediate-Quiz-level-1").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "HTML : Intermediate Level 1";
 });
 
-document.querySelector(".html-intermediate-Quiz-level-2").addEventListener("click", function() {
+document.querySelector(".html-intermediate-Quiz-level-2").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "HTML : Intermediate Level 2";
 });
 
-document.querySelector(".html-intermediate-Quiz-level-3").addEventListener("click", function() {
+document.querySelector(".html-intermediate-Quiz-level-3").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "HTML : Intermediate Level 3";
 });
 
-document.querySelector(".html-intermediate-Quiz-assignment-level").addEventListener("click", function() {
+document.querySelector(".html-intermediate-Quiz-assignment-level").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "HTML : Intermediate Assignment";
 });
 
 // html advanced level buttons
 
-document.querySelector(".html-advanced-Quiz-level-1").addEventListener("click", function() {
+document.querySelector(".html-advanced-Quiz-level-1").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "HTML : Advanced Level 1";
 });
 
-document.querySelector(".html-advanced-Quiz-level-2").addEventListener("click", function() {  
+document.querySelector(".html-advanced-Quiz-level-2").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "HTML : Advanced Level 2";
 });
 
-document.querySelector(".html-advanced-Quiz-level-3").addEventListener("click", function() {
+document.querySelector(".html-advanced-Quiz-level-3").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "HTML : Advanced Level 3";
 });
 
-document.querySelector(".html-advanced-Quiz-assignment-level").addEventListener("click", function() {
+document.querySelector(".html-advanced-Quiz-assignment-level").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "HTML : Advanced Assignment";
 });
 
@@ -3366,54 +3366,54 @@ document.querySelector(".html-advanced-Quiz-assignment-level").addEventListener(
 
 // JavaScript beginner level buttons
 
-document.querySelector(".js-beginner-Quiz-level-1").addEventListener("click", function() {
+document.querySelector(".js-beginner-Quiz-level-1").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "JavaScript : Beginner Level 1";
 });
 
-document.querySelector(".js-beginner-Quiz-level-2").addEventListener("click", function() {
+document.querySelector(".js-beginner-Quiz-level-2").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "JavaScript : Beginner Level 2";
 });
-document.querySelector(".js-beginner-Quiz-level-3").addEventListener("click", function() {
+document.querySelector(".js-beginner-Quiz-level-3").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "JavaScript : Beginner Level 3";
 });
 
-document.querySelector(".js-beginner-Quiz-assignment-level").addEventListener("click", function() {
+document.querySelector(".js-beginner-Quiz-assignment-level").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "JavaScript : Beginner Assignment";
 });
 
 // JavaScript intermidiate level buttons
 
-document.querySelector(".js-intermediate-Quiz-level-1").addEventListener("click", function() {
+document.querySelector(".js-intermediate-Quiz-level-1").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "JavaScript : Intermediate Level 1";
 });
 
-document.querySelector(".js-intermediate-Quiz-level-2").addEventListener("click", function() {
+document.querySelector(".js-intermediate-Quiz-level-2").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "JavaScript : Intermediate Level 2";
 });
 
-document.querySelector(".js-intermediate-Quiz-level-3").addEventListener("click", function() {
+document.querySelector(".js-intermediate-Quiz-level-3").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "JavaScript : Intermediate Level 3";
 });
 
-document.querySelector(".js-intermediate-Quiz-assignment-level").addEventListener("click", function() {
+document.querySelector(".js-intermediate-Quiz-assignment-level").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "JavaScript : Intermediate Assignment";
 });
 
 // JavaScript advanced level buttons  
 
-document.querySelector(".js-advanced-Quiz-level-1").addEventListener("click", function() {
+document.querySelector(".js-advanced-Quiz-level-1").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "JavaScript : Advanced Level 1";
 });
 
-document.querySelector(".js-advanced-Quiz-level-2").addEventListener("click", function() {
+document.querySelector(".js-advanced-Quiz-level-2").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "JavaScript : Advanced Level 2";
 });
 
-document.querySelector(".js-advanced-Quiz-level-3").addEventListener("click", function() {
+document.querySelector(".js-advanced-Quiz-level-3").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "JavaScript : Advanced Level 3";
 });
 
-document.querySelector(".js-advanced-Quiz-assignment-level").addEventListener("click", function() {
+document.querySelector(".js-advanced-Quiz-assignment-level").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "JavaScript : Advanced Assignment";
 });
 
@@ -3421,55 +3421,55 @@ document.querySelector(".js-advanced-Quiz-assignment-level").addEventListener("c
 
 // Python beginner level buttons
 
-document.querySelector(".python-beginner-Quiz-level-1").addEventListener("click", function() {
+document.querySelector(".python-beginner-Quiz-level-1").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Python : Beginner Level 1";
 });
 
-document.querySelector(".python-beginner-Quiz-level-2").addEventListener("click", function() {
+document.querySelector(".python-beginner-Quiz-level-2").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Python : Beginner Level 2";
 });
 
-document.querySelector(".python-beginner-Quiz-level-3").addEventListener("click", function() {
+document.querySelector(".python-beginner-Quiz-level-3").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Python : Beginner Level 3";
 });
 
-document.querySelector(".python-beginner-Quiz-assignment-level").addEventListener("click", function() {
+document.querySelector(".python-beginner-Quiz-assignment-level").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Python : Beginner Assignment";
 });
 
 // Python intermidiate level buttons
 
-document.querySelector(".python-intermediate-Quiz-level-1").addEventListener("click", function() {
+document.querySelector(".python-intermediate-Quiz-level-1").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Python : Intermediate Level 1";
 });
 
-document.querySelector(".python-intermediate-Quiz-level-2").addEventListener("click", function() {
+document.querySelector(".python-intermediate-Quiz-level-2").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Python : Intermediate Level 2";
 });
 
-document.querySelector(".python-intermediate-Quiz-level-3").addEventListener("click", function() {
+document.querySelector(".python-intermediate-Quiz-level-3").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Python : Intermediate Level 3";
 });
 
-document.querySelector(".python-intermediate-Quiz-assignment-level").addEventListener("click", function() {
+document.querySelector(".python-intermediate-Quiz-assignment-level").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Python : Intermediate Assignment";
 });
 
 // Python advanced level buttons
 
-document.querySelector(".python-advanced-Quiz-level-1").addEventListener("click", function() {
+document.querySelector(".python-advanced-Quiz-level-1").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Python : Advanced Level 1";
 });
 
-document.querySelector(".python-advanced-Quiz-level-2").addEventListener("click", function() {
+document.querySelector(".python-advanced-Quiz-level-2").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Python : Advanced Level 2";
 });
 
-document.querySelector(".python-advanced-Quiz-level-3").addEventListener("click", function() {
+document.querySelector(".python-advanced-Quiz-level-3").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Python : Advanced Level 3";
 });
 
-document.querySelector(".python-advanced-Quiz-assignment-level").addEventListener("click", function() {
+document.querySelector(".python-advanced-Quiz-assignment-level").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Python : Advanced Assignment";
 });
 
@@ -3477,194 +3477,207 @@ document.querySelector(".python-advanced-Quiz-assignment-level").addEventListene
 
 // Java Beginner level buttons
 
-document.querySelector(".java-beginner-Quiz-level-1").addEventListener("click", function() {
+document.querySelector(".java-beginner-Quiz-level-1").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Java : Beginner Level 1";
 });
 
-document.querySelector(".java-beginner-Quiz-level-2").addEventListener("click", function() {
+document.querySelector(".java-beginner-Quiz-level-2").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Java : Beginner Level 2";
 });
 
-document.querySelector(".java-beginner-Quiz-level-3").addEventListener("click", function() {
+document.querySelector(".java-beginner-Quiz-level-3").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Java : Beginner Level 3";
 });
 
-document.querySelector(".java-beginner-Quiz-assignment-level").addEventListener("click", function() {
+document.querySelector(".java-beginner-Quiz-assignment-level").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Java : Beginner Assignment";
 });
 
 // Java intermidiate level buttons
 
-document.querySelector(".java-intermediate-Quiz-level-1").addEventListener("click", function() {
+document.querySelector(".java-intermediate-Quiz-level-1").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Java : Intermediate Level 1";
 });
 
-document.querySelector(".java-intermediate-Quiz-level-2").addEventListener("click", function() {
+document.querySelector(".java-intermediate-Quiz-level-2").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Java : Intermediate Level 2";
 });
 
-document.querySelector(".java-intermediate-Quiz-level-3").addEventListener("click", function() {
+document.querySelector(".java-intermediate-Quiz-level-3").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Java : Intermediate Level 3";
 });
 
-document.querySelector(".java-intermediate-Quiz-assignment-level").addEventListener("click", function() {
+document.querySelector(".java-intermediate-Quiz-assignment-level").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Java : Intermediate Assignment";
 });
 
 // Java advanced level buttons
 
-document.querySelector(".java-advanced-Quiz-level-1").addEventListener("click", function() {
+document.querySelector(".java-advanced-Quiz-level-1").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Java : Advanced Level 1";
 });
 
-document.querySelector(".java-advanced-Quiz-level-2").addEventListener("click", function() {
+document.querySelector(".java-advanced-Quiz-level-2").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Java : Advanced Level 2";
 });
 
-document.querySelector(".java-advanced-Quiz-level-3").addEventListener("click", function() {
+document.querySelector(".java-advanced-Quiz-level-3").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Java : Advanced Level 3";
 });
 
-document.querySelector(".java-advanced-Quiz-assignment-level").addEventListener("click", function() {
+document.querySelector(".java-advanced-Quiz-assignment-level").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "Java : Advanced Assignment";
 });
 // Csharp
 // C# Beginner level buttons
 
-document.querySelector(".CSharp-beginner-Quiz-level-1").addEventListener("click", function() {
+document.querySelector(".CSharp-beginner-Quiz-level-1").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C# : Beginner Level 1";
 });
-document.querySelector(".CSharp-beginner-Quiz-level-2").addEventListener("click", function() {
+document.querySelector(".CSharp-beginner-Quiz-level-2").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C# : Beginner Level 2";
 });
 
-document.querySelector(".CSharp-beginner-Quiz-level-3").addEventListener("click", function() {
+document.querySelector(".CSharp-beginner-Quiz-level-3").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C# : Beginner Level 3";
 });
 
-document.querySelector(".CSharp-beginner-Quiz-assignment-level").addEventListener("click", function() {
+document.querySelector(".CSharp-beginner-Quiz-assignment-level").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C# : Beginner Assignment";
 });
 
 // C# intermediate level buttons
 
-document.querySelector(".CSharp-intermediate-Quiz-level-1").addEventListener("click", function() {
+document.querySelector(".CSharp-intermediate-Quiz-level-1").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C# : Intermediate Level 1";
 });
 
-document.querySelector(".CSharp-intermediate-Quiz-level-2").addEventListener("click", function() {
+document.querySelector(".CSharp-intermediate-Quiz-level-2").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C# : Intermediate Level 2";
 });
 
-document.querySelector(".CSharp-intermediate-Quiz-level-3").addEventListener("click", function() {
+document.querySelector(".CSharp-intermediate-Quiz-level-3").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C# : Intermediate Level 3";
 });
 
-document.querySelector(".CSharp-intermediate-Quiz-assignment-level").addEventListener("click", function() {
+document.querySelector(".CSharp-intermediate-Quiz-assignment-level").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C# : Intermediate Assignment";
 });
 
 // C# advanced level buttons
 
-document.querySelector(".CSharp-advanced-Quiz-level-1").addEventListener("click", function() {
+document.querySelector(".CSharp-advanced-Quiz-level-1").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C# : Advanced Level 1";
 });
 
-document.querySelector(".CSharp-advanced-Quiz-level-2").addEventListener("click", function() {
+document.querySelector(".CSharp-advanced-Quiz-level-2").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C# : Advanced Level 2";
 });
 
-document.querySelector(".CSharp-advanced-Quiz-level-3").addEventListener("click", function() {
+document.querySelector(".CSharp-advanced-Quiz-level-3").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C# : Advanced Level 3";
 });
 
-document.querySelector(".CSharp-advanced-Quiz-assignment-level").addEventListener("click", function() {
+document.querySelector(".CSharp-advanced-Quiz-assignment-level").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C# : Advanced Assignment";
 });
 
 // C 
 // C Beginner level buttons
 
-document.querySelector(".C-beginner-Quiz-level-1").addEventListener("click", function() {
+document.querySelector(".C-beginner-Quiz-level-1").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C : Beginner Level 1";
 });
 
-document.querySelector(".C-beginner-Quiz-level-2").addEventListener("click", function() {
+document.querySelector(".C-beginner-Quiz-level-2").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C : Beginner Level 2";
 });
 
-document.querySelector(".C-beginner-Quiz-level-3").addEventListener("click", function() {
+document.querySelector(".C-beginner-Quiz-level-3").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C : Beginner Level 3";
 });
 
-document.querySelector(".C-beginner-Quiz-assignment-level").addEventListener("click", function() {
+document.querySelector(".C-beginner-Quiz-assignment-level").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C : Beginner Assignment";
 });
 
 // C intermediate level buttons
 
-document.querySelector(".C-intermediate-Quiz-level-1").addEventListener("click", function() {
+document.querySelector(".C-intermediate-Quiz-level-1").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C : Intermediate Level 1";
 });
 
-document.querySelector(".C-intermediate-Quiz-level-2").addEventListener("click", function() {
+document.querySelector(".C-intermediate-Quiz-level-2").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C : Intermediate Level 2";
 });
 
-document.querySelector(".C-intermediate-Quiz-level-3").addEventListener("click", function() {
+document.querySelector(".C-intermediate-Quiz-level-3").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C : Intermediate Level 3";
 });
 
-document.querySelector(".C-intermediate-Quiz-assignment-level").addEventListener("click", function() {
+document.querySelector(".C-intermediate-Quiz-assignment-level").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C : Intermediate Assignment";
 });
 
 // C advanced level buttons
 
-document.querySelector(".C-advanced-Quiz-level-1").addEventListener("click", function() {
+document.querySelector(".C-advanced-Quiz-level-1").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C : Advanced Level 1";
 });
 
-document.querySelector(".C-advanced-Quiz-level-2").addEventListener("click", function() {
+document.querySelector(".C-advanced-Quiz-level-2").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C : Advanced Level 2";
 });
 
-document.querySelector(".C-advanced-Quiz-level-3").addEventListener("click", function() {
+document.querySelector(".C-advanced-Quiz-level-3").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C : Advanced Level 3";
 });
 
-document.querySelector(".C-advanced-Quiz-assignment-level").addEventListener("click", function() {
+document.querySelector(".C-advanced-Quiz-assignment-level").addEventListener("click", function () {
   document.getElementById("start-quiz-btn").innerText = "C : Advanced Assignment";
 });
 
 
-document.getElementById("start-quiz-btn").addEventListener("click", function() {
+document.getElementById("start-quiz-btn").addEventListener("click", function () {
   currentQuestionIndex = 0;
+  userAnswers = []; // reset any previous answers
+  score = 0;
   document.getElementById("quiz-container").style.display = "block";
   loadQuestion();
 });
 
 
-document.getElementById("remove").addEventListener("click", function() {
+document.getElementById("remove").addEventListener("click", function () {
   document.getElementById("quiz-container").style.display = "none";
 });
 
 function loadQuestion() {
-  const questionObj = currentQuestions[currentQuestionIndex];
-  document.getElementById("question-text").innerText = questionObj.question;
-  document.getElementById("question-number").innerText =
-    `Question: ${currentQuestionIndex + 1}/${currentQuestions.length}`;
+  if (!currentQuestions || currentQuestions.length === 0 || currentQuestionIndex === null) {
+    document.getElementById("quiz-container").style.display = "none";
+    alert("Please Select language level")
 
-  const optionsContainer = document.getElementById("options-container");
-  optionsContainer.innerHTML = '';
+  }
+  else {
+    const questionObj = currentQuestions[currentQuestionIndex];
+    document.getElementById("question-text").innerText = questionObj.question;
+    document.getElementById("question-number").innerText =
+      `Question: ${currentQuestionIndex + 1}/${currentQuestions.length}`;
 
-  questionObj.options.forEach(option => {
-    const btn = document.createElement("button");
-    btn.innerText = option;
-    btn.onclick = () => selectOption(btn);
-    optionsContainer.appendChild(btn);
-  });
- 
+    const optionsContainer = document.getElementById("options-container");
+    optionsContainer.innerHTML = '';
+
+    questionObj.options.forEach(option => {
+      const btn = document.createElement("button");
+      btn.innerText = option;
+      btn.onclick = () => selectOption(btn);
+      // if user already answered this question, show selection
+      const prev = userAnswers[currentQuestionIndex];
+      if (prev && prev.raw === option) {
+        btn.style.backgroundColor = "#e0aaff";
+      }
+      optionsContainer.appendChild(btn);
+    });
+  }
 
 }
 
@@ -3672,7 +3685,14 @@ function loadQuestion() {
 function selectOption(button) {
   document.querySelectorAll("#options-container button").forEach(btn => btn.style.backgroundColor = "");
   button.style.backgroundColor = "#e0aaff";
+ 
+  userAnswers = userAnswers || [];
+  const raw = button.innerText;
+  const norm = String(raw).trim().toLowerCase();
+  userAnswers[currentQuestionIndex] = { raw, norm };
 }
+let userAnswers = [];
+let score = 0;
 
 function nextQuestion() {
   if (currentQuestionIndex < currentQuestions.length - 1) {
@@ -3683,11 +3703,106 @@ function nextQuestion() {
       <div style="text-align:center; padding:40px;">
         <h2 style="color:purple; font-size:2rem; margin:auto;margin-bottom:20px;margin-top:180px;">🎉 Quiz Completed!</h2>
         <button style="padding:10px 30px; border-radius:7px; background:#6365f1; margin-left:25px;color:white; font-size:1.1rem; border:none; cursor:pointer;" onclick='location.reload()'>Restart Quiz</button>
+        <button style="padding:10px 30px; border-radius:7px; background:#6365f1; margin-left:25px;color:white; font-size:1.1rem; border:none; cursor:pointer;" id="result">View Result</button>
       </div>
     `;
+
+
+    score = 0;
+    for (let i = 0; i < currentQuestions.length; i++) {
+      const correctRaw = (currentQuestions[i] && currentQuestions[i].answer) ? currentQuestions[i].answer : '';
+      const correct = String(correctRaw).trim().toLowerCase();
+      const ua = (typeof userAnswers[i] !== 'undefined' && userAnswers[i] && userAnswers[i].norm) ? userAnswers[i].norm : '';
+      if (ua !== '' && ua === correct) score++;
+    }
+
+    checkResult();
+
   }
 }
 
+
+function checkResult() {
+  const ansresult = document.getElementById("result");
+  if (!ansresult) return;
+
+  // ensure we only attach one handler
+  if (ansresult._hasHandler) return;
+  ansresult._hasHandler = true;
+
+  ansresult.addEventListener("click", function () {
+    let resultBox = document.querySelector(".corr-ans");
+    if (!resultBox) {
+      resultBox = document.createElement('div');
+      resultBox.className = 'corr-ans';
+      // basic styles so it's visible
+      resultBox.style.position = 'relative';
+      resultBox.style.maxWidth = '900px';
+      resultBox.style.margin = '20px auto';
+      resultBox.style.padding = '24px';
+      resultBox.style.borderRadius = '12px';
+      resultBox.style.background = '#fff';
+      resultBox.style.boxShadow = '0 4px 20px rgba(0,0,0,0.08)';
+      resultBox.style.fontFamily = 'system-ui, -apple-system, sans-serif';
+      document.getElementById('quiz-container').appendChild(resultBox);
+    }
+
+    const percent = currentQuestions.length ? ((score / currentQuestions.length) * 100).toFixed(2) : 0;
+    let html = `
+      <div style="text-align:center; margin-bottom:24px;">
+        <div style="font-size:28px; font-weight:600; color:#4338ca; margin-bottom:16px;">Quiz Results</div>
+        <div style="display:inline-flex; align-items:center; gap:24px; background:#f5f3ff; padding:16px 24px; border-radius:12px;">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span style="font-size:24px"></span>
+            <div>
+              <div style="font-size:24px; font-weight:600; color:#4338ca">${score}/${currentQuestions.length}</div>
+              <div style="color:#6b7280; font-size:14px">Correct Answers</div>
+            </div>
+          </div>
+          <div style="width:2px; height:40px; background:#e5e7eb"></div>
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span style="font-size:24px"></span>
+            <div>
+              <div style="font-size:24px; font-weight:600; color:#4338ca">${percent}%</div>
+              <div style="color:#6b7280; font-size:14px">Score</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      `;
+
+    // add per-question breakdown
+    html += '<div style="display:flex; flex-direction:column; gap:16px;">';
+    currentQuestions.forEach((q, i) => {
+      const selectedObj = (typeof userAnswers[i] !== 'undefined' && userAnswers[i] !== null) ? userAnswers[i] : null;
+      const selectedRaw = selectedObj ? selectedObj.raw : 'No answer';
+      const correct = q.answer;
+      const ok = selectedObj && String(selectedObj.norm) === String(correct).trim().toLowerCase();
+      html += `
+          <div style="padding:16px; border-radius:12px; background:${ok ? '#f0fdf4' : '#fef2f2'}; border:1px solid ${ok ? '#86efac' : '#fecaca'}; transition:all 0.2s;">
+            <div style="font-size:15px; font-weight:600; color:#1f2937; margin-bottom:12px;">
+              <span style="color:${ok ? '#16a34a' : '#dc2626'}; display:inline-block; width:24px;">${ok ? '✓' : '×'}</span>
+              Question ${i + 1}: ${q.question}
+            </div>
+            <div style="margin-left:24px; display:flex; flex-direction:column; gap:8px;">
+              <div style="color:#4b5563; font-size:14px;">
+                <span style="color:#6b7280; font-weight:500; display:inline-block; width:80px;">Your answer:</span>
+                <span style="color:${ok ? '#16a34a' : '#dc2626'}; font-weight:500;">${selectedRaw}</span>
+              </div>
+              <div style="color:#4b5563; font-size:14px;">
+                <span style="color:#6b7280; font-weight:500; display:inline-block; width:80px;">Correct:</span>
+                <span style="color:#16a34a; font-weight:500;">${correct}</span>
+              </div>
+            </div>
+          </div>
+        `;
+    });
+    html += '</div>';
+
+    resultBox.innerHTML = html;
+    resultBox.style.display = 'block';
+  });
+}
 function previousQuestion() {
   if (currentQuestionIndex > 0) {
     currentQuestionIndex--;
