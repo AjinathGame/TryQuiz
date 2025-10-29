@@ -398,6 +398,28 @@
     cursor: pointer;
 }
 
+/* Timer styling for quiz questions */
+#timer {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 12px;
+    background: linear-gradient(180deg, #ffffff 0%, #fbf8ff 100%);
+    
+    color: #5b21b6;
+    font-weight: 600;
+    
+    box-shadow: 0 4px 12px rgba(99,102,241,0.06);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+    #timer {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+        margin-top: 8px;
+    }
+}
+
 .html-intermediate-Quiz-level-3:active {
     background-color: #bfdbfe;
 }
@@ -3332,7 +3354,6 @@
     width: 60%;
     background-color: transparent;
     box-shadow: 0px 0px 20px white;
-    border-radius: 8px;
     display: flex;
     justify-content: center;
     backdrop-filter: blur(4px);
@@ -3400,5 +3421,9 @@
     padding-bottom: 40px;
     left: 25%;
     background-color: whitesmoke;
+    display: none;
+}
+
+.corr-ans::-webkit-scrollbar{
     display: none;
 }

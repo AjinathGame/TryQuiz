@@ -3640,7 +3640,7 @@ document.querySelector(".C-advanced-Quiz-assignment-level").addEventListener("cl
 
 document.getElementById("start-quiz-btn").addEventListener("click", function () {
   currentQuestionIndex = 0;
-  userAnswers = []; // reset any previous answers
+  userAnswers = []; 
   score = 0;
   document.getElementById("quiz-container").style.display = "block";
   loadQuestion();
@@ -3658,6 +3658,8 @@ function loadQuestion() {
 
   }
   else {
+    
+    stopQuestionTimer();
     const questionObj = currentQuestions[currentQuestionIndex];
     document.getElementById("question-text").innerText = questionObj.question;
     document.getElementById("question-number").innerText =
@@ -3670,13 +3672,15 @@ function loadQuestion() {
       const btn = document.createElement("button");
       btn.innerText = option;
       btn.onclick = () => selectOption(btn);
-      // if user already answered this question, show selection
+
       const prev = userAnswers[currentQuestionIndex];
       if (prev && prev.raw === option) {
         btn.style.backgroundColor = "#e0aaff";
       }
       optionsContainer.appendChild(btn);
     });
+   
+    startQuestionTimer(20);
   }
 
 }
@@ -3685,7 +3689,7 @@ function loadQuestion() {
 function selectOption(button) {
   document.querySelectorAll("#options-container button").forEach(btn => btn.style.backgroundColor = "");
   button.style.backgroundColor = "#e0aaff";
- 
+
   userAnswers = userAnswers || [];
   const raw = button.innerText;
   const norm = String(raw).trim().toLowerCase();
@@ -3694,11 +3698,58 @@ function selectOption(button) {
 let userAnswers = [];
 let score = 0;
 
+let questionTimerInterval = null;
+let questionTimeLeft = 0;
+
+function startQuestionTimer(seconds = 20) {
+  stopQuestionTimer();
+  questionTimeLeft = seconds;
+
+
+  let timerEl = document.getElementById('timer');
+  if (!timerEl) {
+    timerEl = document.createElement('div');
+    timerEl.id = 'timer';
+    timerEl.style.marginTop = '8px';
+    timerEl.style.fontSize = '14px';
+    timerEl.style.color = '#374151';
+    timerEl.style.fontWeight = '600';
+    const questionBox = document.querySelector('.question-box') || document.getElementById('quiz-container');
+    if (questionBox) questionBox.appendChild(timerEl);
+  }
+  timerEl.style.display = 'block';
+  timerEl.innerText = `Time left: ${questionTimeLeft}s`;
+
+  questionTimerInterval = setInterval(() => {
+    questionTimeLeft--;
+    if (timerEl) timerEl.innerText = `Time left: ${questionTimeLeft}s`;
+    if (questionTimeLeft <= 0) {
+      stopQuestionTimer();
+   
+      nextQuestion();
+    }
+  }, 1000);
+}
+
+function stopQuestionTimer() {
+  if (questionTimerInterval) {
+    clearInterval(questionTimerInterval);
+    questionTimerInterval = null;
+  }
+}
+
 function nextQuestion() {
+
+  stopQuestionTimer();
+
   if (currentQuestionIndex < currentQuestions.length - 1) {
     currentQuestionIndex++;
     loadQuestion();
   } else {
+   
+    let timerEl = document.getElementById('timer');
+    if (timerEl) timerEl.style.display = 'none';
+
     document.getElementById("quiz-container").innerHTML = `
       <div style="text-align:center; padding:40px;">
         <h2 style="color:purple; font-size:2rem; margin:auto;margin-bottom:20px;margin-top:180px;">🎉 Quiz Completed!</h2>
@@ -3726,7 +3777,6 @@ function checkResult() {
   const ansresult = document.getElementById("result");
   if (!ansresult) return;
 
-  // ensure we only attach one handler
   if (ansresult._hasHandler) return;
   ansresult._hasHandler = true;
 
@@ -3735,7 +3785,6 @@ function checkResult() {
     if (!resultBox) {
       resultBox = document.createElement('div');
       resultBox.className = 'corr-ans';
-      // basic styles so it's visible
       resultBox.style.position = 'relative';
       resultBox.style.maxWidth = '900px';
       resultBox.style.margin = '20px auto';
@@ -3750,12 +3799,13 @@ function checkResult() {
     const percent = currentQuestions.length ? ((score / currentQuestions.length) * 100).toFixed(2) : 0;
     let html = `
       <div style="text-align:center; margin-bottom:24px;">
-        <div style="font-size:28px; font-weight:600; color:#4338ca; margin-bottom:16px;">Quiz Results</div>
+      <h4 id="res-remove"style=" font-size: 1.5rem;text-align: end;padding-top: 5px;margin-right: 7px;cursor: pointer;">❌</h4>
+        <div style="font-size:28px; font-weight:600; color:#9119ee; margin-bottom:16px;margin-top:15px;">Quiz Results</div>
         <div style="display:inline-flex; align-items:center; gap:24px; background:#f5f3ff; padding:16px 24px; border-radius:12px;">
           <div style="display:flex; align-items:center; gap:8px;">
             <span style="font-size:24px"></span>
             <div>
-              <div style="font-size:24px; font-weight:600; color:#4338ca">${score}/${currentQuestions.length}</div>
+              <div style="font-size:24px; font-weight:600; color:#9119ee">${score}/${currentQuestions.length}</div>
               <div style="color:#6b7280; font-size:14px">Correct Answers</div>
             </div>
           </div>
@@ -3763,7 +3813,7 @@ function checkResult() {
           <div style="display:flex; align-items:center; gap:8px;">
             <span style="font-size:24px"></span>
             <div>
-              <div style="font-size:24px; font-weight:600; color:#4338ca">${percent}%</div>
+              <div style="font-size:24px; font-weight:600; color:#9119ee">${percent}%</div>
               <div style="color:#6b7280; font-size:14px">Score</div>
             </div>
           </div>
@@ -3771,8 +3821,8 @@ function checkResult() {
       </div>
       `;
 
-    // add per-question breakdown
-    html += '<div style="display:flex; flex-direction:column; gap:16px;">';
+   
+    html += '<div style="display:flex; flex-direction:column; gap:16px; margin-left:10px;margin-right:10px;">';
     currentQuestions.forEach((q, i) => {
       const selectedObj = (typeof userAnswers[i] !== 'undefined' && userAnswers[i] !== null) ? userAnswers[i] : null;
       const selectedRaw = selectedObj ? selectedObj.raw : 'No answer';
@@ -3795,14 +3845,23 @@ function checkResult() {
               </div>
             </div>
           </div>
+    
         `;
+            
     });
     html += '</div>';
 
     resultBox.innerHTML = html;
     resultBox.style.display = 'block';
+    let res_rem = document.getElementById("res-remove")
+    res_rem.addEventListener("click", function () {
+      const abc = document.querySelector(".corr-ans")
+      abc.style.display = "none"
+    })
   });
+
 }
+
 function previousQuestion() {
   if (currentQuestionIndex > 0) {
     currentQuestionIndex--;
